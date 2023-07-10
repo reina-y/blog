@@ -12,8 +12,11 @@
                 <div class='post'>
                    <h2 class='title'>{{$post->title}}</h2>
                    <p>{{$post->body}}</p>
+                   <p>{{$post->created_at}}</p>
               @endforeach
                  </div>
-                 
+                 <div class='pagenaate'>
+                     {{$posts->links()}}
+                 </div>
       </body>
  </html>
