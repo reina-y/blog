@@ -14,5 +14,6 @@
                    <p>{{$post->body}}</p>
               @endforeach
                  </div>
+                 
       </body>
  </html>
