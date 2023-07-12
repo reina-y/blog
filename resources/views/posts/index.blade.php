@@ -10,12 +10,14 @@
           <div class='posts'>
               @foreach($posts as $post)  
                 <div class='post'>
-                   <h2 class='title'>{{$post->title}}</h2>
+                   <h2 class='title'>
+                       <a href='/posts/{{$post->id}}'>{{$post->title}}</a>
+                   </h2>
                    <p>{{$post->body}}</p>
                    <p>{{$post->created_at}}</p>
               @endforeach
                  </div>
-                 <div class='pagenaate'>
+                 <div class='paginate'>
                      {{$posts->links()}}
                  </div>
       </body>

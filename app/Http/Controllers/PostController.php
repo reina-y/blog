@@ -7,10 +7,12 @@ use App\Models\Post;
 
 class PostController extends Controller
 {
-    public function index(post $post)
+    public function index(Post $post)
     {
- dev_basis02
-    return view('posts.index')->with(['posts'=> $post->getPaginateByLimit()]);
+        return view('posts.index')->with(['posts'=> $post->getpaginateByLimit()]);
     } 
+    public function show(Post $post)
+    {
+        return view('posts.show')->with(['post'=> $post]);
+    }
 }
-
