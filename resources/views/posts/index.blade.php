@@ -10,6 +10,7 @@
           <div class='posts'>
               @foreach($posts as $post)  
                 <div class='post'>
+                    <a href='/posts/{{$post->id}}/edit'>編集</a>
                    <h2 class='title'>
                        <a href='/posts/{{$post->id}}'>{{$post->title}}</a>
                    </h2>
