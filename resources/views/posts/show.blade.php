@@ -13,8 +13,6 @@
         </div>
         <button>
             <a href='/'>投稿一覧</a>
-            
-            <br><a href='{{$post->id}}/edit'>編集</a>
         </button>
     </body>
 </html>
